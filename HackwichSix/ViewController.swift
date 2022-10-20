@@ -10,12 +10,32 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var myFriendsArray = ["Katie", "Sam", "Clarissa"]
+   // var myFriendsArray = ["Katie", "Sam", "Clarissa"]
+    
+  //  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+   // {
+        
+   //     return myFriendsArray.count
+ //   }
+    
+    
+ //   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+ //   {
+ //       let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
+        
+ //       let text = myFriendsArray[indexPath.row]
+        
+//        cell?.textLabel?.text = text
+        
+ //       return cell!
+  //  }
+    
+    var travelBucketListArray = ["Greece", "Egypt", "Amsterdam", "Indonesia", "Thailand"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         
-        return myFriendsArray.count
+        return travelBucketListArray.count
     }
     
     
@@ -23,7 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
         
-        let text = myFriendsArray[indexPath.row]
+        let text = travelBucketListArray[indexPath.row]
         
         cell?.textLabel?.text = text
         
